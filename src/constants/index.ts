@@ -1,1 +1,2 @@
-export { ROUTE_NAMES } from './routeNames';
+export { ENDPOINTS } from './endpoints';
+export { METHODS_HTTP } from './methodsHTTP';
