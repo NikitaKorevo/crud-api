@@ -1,6 +1,6 @@
 # crud-api
 
-###### Simple CRUD API using in-memory database underneath.
+##### Simple CRUD API using in-memory database underneath.
 
 ## Installing
 
@@ -12,17 +12,17 @@ $user: npm run install
 
 ## Running
 
-###### Development mode:
+##### Development mode:
 
 `$user: npm run start:dev`
 
-###### Production mode:
+##### Production mode:
 
 `$user: npm run start:prod`
 
 ## Using
 
-###### Base URL:
+##### Base URL:
 
 `http://localhost:3000/`
 
@@ -36,7 +36,7 @@ $user: npm run install
 | `api/user/{userId}`  | PUT         | Update a user     |
 | `api/user/${userId}` | DELETE      | Delete a user     |
 
-###### Example:
+##### Example:
 
 `http://localhost:3000/api/user`
 
