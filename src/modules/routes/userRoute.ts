@@ -20,7 +20,7 @@ export const userRoute = (props: userRoute) => {
   const isRequestValid = validateRequest();
 
   if (!isRequestValid) {
-    return response.writeHead(404, ERROR_MESSAGES.AmountParametersExceeded).end();
+    return response.writeHead(404, ERROR_MESSAGES.amountParametersExceeded).end();
   }
 
   const router = {

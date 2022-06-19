@@ -1,6 +1,6 @@
 import { userRoute } from '../routes/userRoute';
 import { ISlicedRequestURL } from '../../types';
-import { ENDPOINTS } from '../../constants/';
+import { ENDPOINTS, ERROR_MESSAGES } from '../../constants/';
 import { IncomingMessage, ServerResponse } from 'http';
 
 interface IRouterProps {
@@ -10,7 +10,8 @@ interface IRouterProps {
 }
 
 export function router(props: IRouterProps) {
-  const { endpoint } = props.slicedRequestURL;
+  const { request, response, slicedRequestURL } = props;
+  const { endpoint } = slicedRequestURL;
 
   switch (endpoint) {
     case ENDPOINTS.apiUsers:
@@ -19,6 +20,7 @@ export function router(props: IRouterProps) {
       break;
 
     default:
+      response.writeHead(404, ERROR_MESSAGES.endpointNotExist).end();
       break;
   }
 }
