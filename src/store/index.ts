@@ -1,26 +1,7 @@
 import { IUser } from '../types/';
 
 class Store {
-  users: Array<IUser> = [
-    {
-      id: '9c5aed2b-dbbf-494d-80fb-cd6da1e20937',
-      username: 'Nikita',
-      age: '24',
-      hobbies: ['programming'],
-    },
-    {
-      id: '850ddbad-5ecf-49ed-b66a-7c6e7ca19197',
-      username: 'Mike',
-      age: '48',
-      hobbies: ['cooking', 'drawing'],
-    },
-    {
-      id: '28685bd2-ec4f-43aa-9e9d-b889070639d7',
-      username: 'Daniel',
-      age: '96',
-      hobbies: ['swimming'],
-    },
-  ];
+  users: Array<IUser> = [];
 
   getAllUsers = async (): Promise<Array<IUser>> => {
     return this.users;
