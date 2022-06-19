@@ -2,12 +2,12 @@ import dotenv from 'dotenv';
 import { env } from 'process';
 import { createServer } from 'http';
 import { router } from './modules/router/';
-import { sliceRequestURL } from './utils/sliceRequestURL';
+import { sliceRequestURL } from './utils';
 
 dotenv.config();
 
 const app = (): void => {
-  const PORT = env.port;
+  const { PORT } = env;
 
   const server = createServer((request, response) => {
     const slicedRequestURL = sliceRequestURL(request);

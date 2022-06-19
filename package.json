@@ -18,10 +18,12 @@
   },
   "homepage": "https://github.com/NikitaKorevo/crud-api#readme",
   "dependencies": {
-    "dotenv": "^16.0.1"
+    "dotenv": "^16.0.1",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "@types/node": "^17.0.42",
+    "@types/uuid": "^8.3.4",
     "@typescript-eslint/eslint-plugin": "^5.28.0",
     "@typescript-eslint/parser": "^5.28.0",
     "eslint": "^8.17.0",
